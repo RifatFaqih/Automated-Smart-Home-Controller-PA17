@@ -1,0 +1,8 @@
+## Background Kehadiran
+Proyek ini bertujuan untuk merancang sistem Smart Home Controller yang tidak hanya mengontrol perangkat rumah tangga, seperti lampu, kipas angin, pendingin ruangan, dan alarm, tetapi juga mengotomatisasi pengaturannya berdasarkan kondisi lingkungan. Selain itu, sistem ini juga dilengkapi dengan fitur pemantauan perangkat berbasis sensor, yang memungkinkan pengguna untuk memantau status perangkat secara langsung.
+
+## Cara Kerja
+Smart Home Controller bekerja dengan memantau berbagai sensor yang mendeteksi suhu dan tingkat cahaya di lingkungan. Berdasarkan data yang diperoleh dari sensor-sensor ini, sistem mengontrol perangkat rumah seperti kipas, lampu, dan alarm. Ketika suhu melebihi ambang batas tertentu (misalnya 30°C), kipas akan dihidupkan. Jika sensor cahaya mendeteksi cahaya rendah, lampu akan menyala. Sistem ini menggunakan Finite State Machine (FSM) untuk memantau dan mengubah status perangkat sesuai dengan kondisi yang terdeteksi. Alarm juga diaktifkan otomatis ketika suhu mencapai ambang batas yang telah ditentukan, dan status perangkat ditampilkan di layar 7-segment.
+
+## Cara Penggunaan
+Pengguna dapat menghubungkan sensor suhu dan cahaya ke sistem untuk mengaktifkan alat secara otomatis. Setelah sistem dihidupkan, perangkat seperti kipas dan lampu akan bekerja berdasarkan kondisi sensor tanpa perlu pengaturan manual. Jika suhu melebihi 30°C, kipas akan menyala; jika cahaya rendah, lampu akan aktif. Sistem juga dapat mengaktifkan alarm ketika suhu mencapai level kritis. Tampilan 7-segment akan menunjukkan status perangkat, memberi informasi apakah perangkat sedang aktif atau tidak. Semua proses ini terjadi secara otomatis berdasarkan input sensor.
