@@ -1,7 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.numeric_std.ALL;
 
 entity Automation_Module is
     Port ( clk        : in  STD_LOGIC;
@@ -19,9 +18,9 @@ begin
         elsif rising_edge(clk) then
             -- Loop construct to automate fan based on temperature
             if to_integer(unsigned(temperature)) > 25 then
-                fan_signal <= '1'; -- Nyalakan kipas jika suhu lebih dari 25°C
+                fan_signal <= '1'; -- Nyalakan kipas jika suhu lebih dari 25ï¿½C
             else
-                fan_signal <= '0'; -- Matikan kipas jika suhu kurang dari 25°C
+                fan_signal <= '0'; -- Matikan kipas jika suhu kurang dari 25ï¿½C
             end if;
         end if;
     end process;

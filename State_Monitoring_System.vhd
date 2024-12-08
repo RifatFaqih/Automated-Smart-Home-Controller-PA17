@@ -1,8 +1,6 @@
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.numeric_std.all;
 
 entity State_Monitoring_System is
     Port ( clk          : in  STD_LOGIC;
@@ -10,7 +8,7 @@ entity State_Monitoring_System is
            fan_control  : in  STD_LOGIC;
            light_control: in  STD_LOGIC;
            alarm_control: in  STD_LOGIC;
-           current_state: out STD_LOGIC_VECTOR(1 downto 0));  -- 2-bit state
+           current_state: out String(1 to 16));  -- 2-bit state
 end State_Monitoring_System;
 
 architecture Behavioral of State_Monitoring_System is
@@ -18,7 +16,8 @@ architecture Behavioral of State_Monitoring_System is
     signal state, next_state: state_type;
 begin
     process(clk, reset)
-    begin
+    begin	
+	state <= idle;
         if reset = '1' then
             state <= Idle;
         elsif rising_edge(clk) then
@@ -49,8 +48,16 @@ begin
             when others =>
                 next_state <= Idle;
         end case;
-    end process;
-
+	
     -- Output state as 2-bit value
-    current_state <= std_logic_vector(to_unsigned(state'pos(state), 2));
+	case state is
+		when Idle =>
+		    current_state <= "Idle            ";
+		when Device_Control =>
+		    current_state <= "DeviceControl   ";
+		when Alarm_Activated =>
+		    current_state <= "AlarmActivated  ";
+
+	end case;
+    end process;
 end Behavioral;

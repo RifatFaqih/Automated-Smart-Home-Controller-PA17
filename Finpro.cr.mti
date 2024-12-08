@@ -1,57 +1,37 @@
-C:/intelFPGA/FinproPSD/Integration.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/FinproPSD/Integration.vhd
+C:/intelFPGA/FinproPSD/Testbench_Finpro.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/FinproPSD/Testbench_Finpro.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity Smart_Home_Controller
--- Compiling architecture Integrated of Smart_Home_Controller
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(38): (vcom-1136) Unknown identifier "to_integer".
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(38): Type error resolving infix expression ">" as type std.STANDARD.BOOLEAN.
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(45): (vcom-1136) Unknown identifier "to_integer".
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(45): Type error resolving infix expression "<" as type std.STANDARD.BOOLEAN.
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(52): (vcom-1136) Unknown identifier "to_integer".
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(52): Type error resolving infix expression ">" as type std.STANDARD.BOOLEAN.
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(95): Prefix (variable "state") for attribute "pos" is not a type mark.
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(95): (vcom-1136) Unknown identifier "to_unsigned".
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(99): (vcom-1136) Unknown identifier "to_integer".
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(99): Type error resolving infix expression ">" as type std.STANDARD.BOOLEAN.
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(100): (vcom-1136) Unknown identifier "to_integer".
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(100): Type error resolving infix expression "<" as type std.STANDARD.BOOLEAN.
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(108): (vcom-1136) Unknown identifier "to_integer".
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(108): Type error resolving infix expression ">" as type std.STANDARD.BOOLEAN.
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(135): Symbol "display" has already been declared in this region.
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(138): Illegal target for signal assignment.
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(138): Bad target (label "Display") for signal assignment.
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(141): Illegal target for signal assignment.
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(141): Bad target (label "Display") for signal assignment.
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(143): Illegal target for signal assignment.
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(143): Bad target (label "Display") for signal assignment.
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(145): Illegal target for signal assignment.
-** Error: C:/intelFPGA/FinproPSD/Integration.vhd(145): Bad target (label "Display") for signal assignment.
-** Note: C:/intelFPGA/FinproPSD/Integration.vhd(150): VHDL Compiler exiting
+-- Compiling entity Testbench_Smarthome
+-- Compiling architecture behavior of Testbench_Smarthome
+-- Loading package NUMERIC_STD
+-- Loading entity Device_Control_Module
+-- Loading entity State_Monitoring_System
+-- Loading entity Environment_Monitoring_Module
+-- Loading entity Automation_Module
+-- Loading entity Alarm_System
+-- Loading entity Display_System
 
-} {10.0 33.0} {}} C:/intelFPGA/FinproPSD/Device_Control_Module.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/FinproPSD/Device_Control_Module.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-** Error: (vcom-66) Execution of vlib.exe failed. Please check the error log for more details.
-
-} {3.0 4.0} {}} C:/intelFPGA/FinproPSD/Enviroment_Monitoring_MOdule.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/FinproPSD/Enviroment_Monitoring_MOdule.vhd
+} {} {}} C:/intelFPGA/FinproPSD/Device_Control_Module.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/FinproPSD/Device_Control_Module.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity Device_Control_Module
+-- Compiling architecture Behavioral of Device_Control_Module
+
+} {} {}} C:/intelFPGA/FinproPSD/Enviroment_Monitoring_MOdule.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/FinproPSD/Enviroment_Monitoring_MOdule.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
 -- Compiling entity Environment_Monitoring_Module
 -- Compiling architecture Dataflow of Environment_Monitoring_Module
-** Error: C:/intelFPGA/FinproPSD/Enviroment_Monitoring_MOdule.vhd(16): (vcom-1136) Unknown identifier "to_integer".
-** Error: C:/intelFPGA/FinproPSD/Enviroment_Monitoring_MOdule.vhd(16): Type error resolving infix expression ">" as type std.STANDARD.BOOLEAN.
-** Error: C:/intelFPGA/FinproPSD/Enviroment_Monitoring_MOdule.vhd(17): (vcom-1136) Unknown identifier "to_integer".
-** Error: C:/intelFPGA/FinproPSD/Enviroment_Monitoring_MOdule.vhd(17): Type error resolving infix expression "<" as type std.STANDARD.BOOLEAN.
-** Note: C:/intelFPGA/FinproPSD/Enviroment_Monitoring_MOdule.vhd(18): VHDL Compiler exiting
 
-} {10.0 14.0} {}} C:/intelFPGA/FinproPSD/Alarm_System.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/FinproPSD/Alarm_System.vhd
+} {} {}} C:/intelFPGA/FinproPSD/Alarm_System.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/FinproPSD/Alarm_System.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -59,44 +39,25 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity Alarm_System
 -- Compiling architecture Behavioral of Alarm_System
 
-} {} {}} C:/intelFPGA/FinproPSD/Finpro_Testbecnh.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/FinproPSD/Finpro_Testbecnh.vhd
+} {} {}} C:/intelFPGA/FinproPSD/State_Monitoring_System.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/FinproPSD/State_Monitoring_System.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity Testbench_Smart_Home_Controller
--- Compiling architecture behavior of Testbench_Smart_Home_Controller
-** Error: C:/intelFPGA/FinproPSD/Finpro_Testbecnh.vhd(23): near "uut": (vcom-1576) expecting BEGIN.
-
-} {10.0 11.0} {}} C:/intelFPGA/FinproPSD/State_Monitoring_System.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/FinproPSD/State_Monitoring_System.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
 -- Compiling entity State_Monitoring_System
 -- Compiling architecture Behavioral of State_Monitoring_System
-** Error: C:/intelFPGA/FinproPSD/State_Monitoring_System.vhd(55): Prefix (signal "state") for attribute "pos" is not a type mark.
-** Error: C:/intelFPGA/FinproPSD/State_Monitoring_System.vhd(55): (vcom-1136) Unknown identifier "to_unsigned".
-** Note: C:/intelFPGA/FinproPSD/State_Monitoring_System.vhd(56): VHDL Compiler exiting
 
-} {10.0 12.0} {}} C:/intelFPGA/FinproPSD/Automation_Module.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/FinproPSD/Automation_Module.vhd
+} {} {}} C:/intelFPGA/FinproPSD/Automation_Module.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/FinproPSD/Automation_Module.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
 -- Compiling entity Automation_Module
 -- Compiling architecture Behavioral of Automation_Module
-** Error: C:/intelFPGA/FinproPSD/Automation_Module.vhd(21): (vcom-1136) Unknown identifier "to_integer".
-** Error: C:/intelFPGA/FinproPSD/Automation_Module.vhd(21): Type error resolving infix expression ">" as type std.STANDARD.BOOLEAN.
-** Note: C:/intelFPGA/FinproPSD/Automation_Module.vhd(28): VHDL Compiler exiting
 
-} {10.0 12.0} {}} C:/intelFPGA/FinproPSD/Display_System.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/FinproPSD/Display_System.vhd
+} {} {}} C:/intelFPGA/FinproPSD/Display_System.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/FinproPSD/Display_System.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO

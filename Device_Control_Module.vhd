@@ -1,8 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
-
+use IEEE.numeric_std.all;
 entity Device_Control_Module is
     Port ( clk           : in  STD_LOGIC;
            reset         : in  STD_LOGIC;
@@ -24,9 +22,9 @@ begin
         elsif rising_edge(clk) then
             -- Fan control based on temperature
             if to_integer(unsigned(temperature)) > 30 then
-                fan_control <= '1'; -- Nyalakan kipas jika suhu lebih dari 30°C
+                fan_control <= '1'; -- Nyalakan kipas jika suhu lebih dari 30ï¿½C
             else
-                fan_control <= '0'; -- Matikan kipas jika suhu kurang dari 30°C
+                fan_control <= '0'; -- Matikan kipas jika suhu kurang dari 30ï¿½C
             end if;
 
             -- Light control based on light sensor
@@ -38,9 +36,9 @@ begin
 
             -- Alarm control based on certain conditions (for example, temperature threshold)
             if to_integer(unsigned(temperature)) > 40 then
-                alarm_control <= '1'; -- Nyalakan alarm jika suhu lebih dari 40°C
+                alarm_control <= '1'; -- Nyalakan alarm jika suhu lebih dari 40ï¿½C
             else
-                alarm_control <= '0'; -- Matikan alarm jika suhu kurang dari 40°C
+                alarm_control <= '0'; -- Matikan alarm jika suhu kurang dari 40ï¿½C
             end if;
         end if;
     end process;
