@@ -2,12 +2,12 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity Testbench_Smarthome
+entity Testbench_Finpro
 
  is
 end Testbench_Smarthome;
 
-architecture behavior of Testbench_Smarthome is
+architecture behavior of Testbench_Finpro is
     -- Deklarasi sinyal untuk setiap modul
     signal clk           : STD_LOGIC := '0';
     signal reset         : STD_LOGIC := '0';
@@ -16,7 +16,7 @@ architecture behavior of Testbench_Smarthome is
     signal fan_signal    : STD_LOGIC;
     signal light_signal  : STD_LOGIC;
     signal alarm_signal  : STD_LOGIC;
-    signal current_state : STD_LOGIC_VECTOR(1 downto 0);
+    signal current_state : String (1 to 16);
     signal alarm_active  : STD_LOGIC;
     signal display       : STD_LOGIC_VECTOR(6 downto 0);
 begin

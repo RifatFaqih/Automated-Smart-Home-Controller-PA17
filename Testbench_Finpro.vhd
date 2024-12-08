@@ -2,12 +2,12 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity Testbench_Smarthome
+entity Testbench_Finpro
 
  is
-end Testbench_Smarthome;
+end Testbench_Finpro;
 
-architecture behavior of Testbench_Smarthome is
+architecture behavior of Testbench_Finpro is
     -- Deklarasi sinyal untuk setiap modul
     signal clk           : STD_LOGIC := '0';
     signal reset         : STD_LOGIC := '0';
@@ -20,7 +20,7 @@ architecture behavior of Testbench_Smarthome is
     signal alarm_active  : STD_LOGIC;
     signal display       : STD_LOGIC_VECTOR(6 downto 0);
 begin
-    -- Instantiate each module
+    
     uut_device_control: entity work.Device_Control_Module
         port map ( clk => clk, reset => reset, temperature => temperature,
                    light_sensor => light_sensor, fan_control => fan_signal,
@@ -47,35 +47,4 @@ begin
         port map ( clk => clk, reset => reset, fan_state => fan_signal,
                    light_state => light_signal, display => display );
 
-    -- Clock generation
-    clk_process: process
-    begin
-        clk <= not clk after 10 ns;
-        wait for 10 ns;
-    end process;
-
-    -- Stimulus generation
-    stimulus_process: process
-    begin
-        -- Apply reset
-        reset <= '1';
-        wait for 20 ns;
-        reset <= '0';
-        
-        -- Simulate different sensor values
-        temperature <= "00111100"; -- 60°C
-        light_sensor <= "00110000"; -- Low light
-        wait for 50 ns;
-
-        temperature <= "00011000"; -- 25°C
-        light_sensor <= "11000000"; -- Bright light
-        wait for 50 ns;
-
-        temperature <= "01000000"; -- 40°C
-        light_sensor <= "00000000"; -- Dark environment
-        wait for 50 ns;
-
-        -- Finish simulation
-        wait;
-    end process;
 end behavior;
